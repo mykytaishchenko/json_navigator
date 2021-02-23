@@ -1,0 +1,4 @@
+clear==1.0.1
+goodlogging==1.0.1
+rarfile==2.7
+requests==2.6.0
