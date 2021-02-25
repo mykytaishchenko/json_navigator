@@ -65,6 +65,9 @@ def cmd(folders, path, prev_command):
                 dir_name_len = int(command.split()[2])
             else:
                 comments = 'Incorrect length.'
+        elif command == "cmd root":
+            while len(path) > 1:
+                path.pop()
         else:
             comments = 'No such command.'
 
@@ -90,7 +93,8 @@ def show_instruction():
     """
     print('To open an object or get the value of a parameter, enter its name.')
     print('If you want to go back enter "cmd back".')
-    print('If you want to end session enter "cmd exit".\n')
+    print('If you want to end session enter "cmd exit".')
+    print('If you want to go back to root directory enter "cmd exit".\n')
 
 
 def navigator(file):
